@@ -36,3 +36,14 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_seha6ax', 'template_nzabw0i', this)
+    .then(function() {
+      alert('Message envoyé avec succès !');
+    }, function(error) {
+      alert('Erreur : ' + JSON.stringify(error));
+    });
+});

@@ -35,12 +35,13 @@
               <a href="./index.html" class="header__link"> Accueil </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">Parcours </a>
+              <a href="./index.html#about" class="header__link">À propos </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projets
-              </a>
+              <a href="./index.html#parcours" class="header__link">Parcours </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projets</a>
             </li>
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
@@ -68,7 +69,7 @@
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> Parcours </a>
+              <a href="./index.html#parcours"> Parcours </a>
             </li>
 
             <li class="header__sm-menu-link">
@@ -195,6 +196,100 @@
         </div>
       </div>
     </section>
+    <section id="parcours" class="timeline-section">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Parcours Professionnel</span>
+      </h2>
+      <div class="timeline">
+        <!-- Bloc 1 -->
+        <div class="timeline-container right">
+          <div class="timeline-content">
+            <h3>Stage - Études et Solutions</h3>
+            <span>13/01/2025 - 16/02/2025</span>
+            <p>
+              Dans le cadre du BTS SIO. <br>
+              Développement d’une distributions Linux customisée pour l’entreprise, avec intégration d’un script Django pour application spécifique.
+              Distribution déployable sur une majorité de matériel.
+              <br> <br>40 Rue Révérend Père Charles de Foucauld, 83000 Toulon
+            </p>
+          </div>
+        </div>
+        <!-- Bloc 2 -->
+        <div class="timeline-container left">
+          <div class="timeline-content">
+            <h3>Stage - CashMag</h3>
+            <span>01/05/2024 - 31/06/2024</span>
+            Dans le cadre du BTS SIO. <br>
+              Conception et développement d’une application Android en Flutter,<br>
+              permettant la saisie d'inventaire, commande et bon de livraison depuis un appareil android.
+            <br>
+            <br>470 Rue de l'Initiative, 83390 Cuers</p>
+          </div>
+        </div>
+    
+        <!-- Bloc 3 -->
+        <div class="timeline-container right">
+          <div class="timeline-content">
+            <h3>CDD - Équipier polyvalent</h3>
+            <span>Juillet - Août <br> 2022 - 2023 - 2024 </span>
+            <p>
+              Emploi saisonnier: Équipier polyvalent - McDonald's.
+              <br><br>74 Av. des Marronniers, 13112 La Destrousse
+            </p>
+          </div>
+        </div>
+    
+        <!-- Bloc 4 -->
+        <div class="timeline-container left">
+          <div class="timeline-content">
+            <h3> CDD - Préparateur de commandes</h3>
+            <span>01/07/2021 - 31/08/2021</span>
+            <p>
+              Emploi saisonnier: préparateur de commandes - La Scaouest.
+              <br><br>La Scaouest route de Cordemais, 44360 Saint-Étiennede- Montluc
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="parcours" class="timeline-section">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Formations Académiques</span>
+      </h2>
+      <div class="timeline">
+        <!-- Bloc 1 -->
+        <div class="timeline-container left">
+          <div class="timeline-content">
+            <h3>BTS - Service Informatiques aux Organisations</h3>
+            <span>2023 - 2025</span>
+           <p>
+              Lycée Bonaparte, Toulon<br>
+              Option SLAM (Solutions Logicielles et Applications Métiers)<br>
+              Développement d’applications web et mobile, gestion de projet, administration systèmes et réseaux.<br>
+              <br>Av. Winston Churchill, 83000 Toulon
+            </p>
+          </div>
+        </div>
+    
+        <!-- Bloc 2 -->
+        <div class="timeline-container right">
+          <div class="timeline-content">
+            <h3>Obtention Baccalauréat Général</h3>
+            <span>2021</span>
+            <p>
+              Lycée Joliot Curie, Aubagne<br>
+              Spécialité Physique Chimie et Sciences et Vie de la Terre.<br>
+              <br>4 Av. des Goums, 13400 Aubagne
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -286,12 +381,13 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form id="contact-form"action="#" class="contact__form">
             <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
+              <label class="contact__form-label" for="name">Nom</label>
               <input
+              name ="user_name"
                 required
-                placeholder="Enter Your Name"
+                placeholder="Entrez votre nom"
                 type="text"
                 class="contact__form-input"
                 name="name"
@@ -301,8 +397,9 @@
             <div class="contact__form-field">
               <label class="contact__form-label" for="email">Email</label>
               <input
+              name ="user_email"
                 required
-                placeholder="Enter Your Email"
+                placeholder="Entrez votre Email"
                 type="text"
                 class="contact__form-input"
                 name="email"
@@ -312,86 +409,45 @@
             <div class="contact__form-field">
               <label class="contact__form-label" for="message">Message</label>
               <textarea
+              name ="user_message"
                 required
                 cols="30"
                 rows="10"
                 class="contact__form-input"
-                placeholder="Enter Your Message"
+                placeholder="Ecrivez votre message ici"
                 name="message"
                 id="message"
               ></textarea>
             </div>
             <button type="submit" class="btn btn--theme contact__btn">
-              Submit
+              Envoyer
             </button>
           </form>
         </div>
       </div>
     </section>
     <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
-            </p>
-          </div>
-        </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
+  <div class="main-container">
+    <div class="main-footer__upper">
+      <div class="main-footer__row main-footer__row-2">
+        <h4 class="heading heading-sm text-lt">Bréwen CHÉNEAU</h4>
+        <p class="main-footer__short-desc">
+          Portfolio personnel réalisé dans le cadre du BTS SIO SLAM.
+        </p>
       </div>
-    </footer>
-
+    </div>
+    <div class="main-footer__lower">
+      &copy; 2025 Bréwen CHÉNEAU. Tous droits réservés.
+    </div>
+  </div>
+</footer>
     <script src="./index.js"></script>
   </body>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("TON_PUBLIC_KEY"); // à remplacer
+  })();
+</script>
+
 </html>
