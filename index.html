@@ -8,7 +8,7 @@
     <meta name="description" content="Portfolio" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,6 +46,9 @@
               <a href="./index.html#projects" class="header__link">Projets</a>
             </li>
             <li class="header__link-wrapper">
+              <a class="header__link" href="./index.html#certifications">Certifications</a>
+            </li>
+            <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
@@ -77,7 +80,9 @@
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projets </a>
             </li>
-
+          <li class="header__sm-menu-link">
+            <a href="./index.html#certifications">Certifications</a>
+          </li>
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
@@ -200,6 +205,46 @@
         </div>
       </div>
     </section>
+    <section id="bts-sio" class="sec-pad" style="background-color:#f9f9f9">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">Le BTS SIO</span>
+        </h2>
+    
+        <div class="about__content">
+            <p class="project-details__desc-para">
+              Le <strong>BTS SIO (Services Informatiques aux Organisations)</strong> est un diplôme de niveau Bac+2, reconnu par l'État, qui prépare les étudiants aux métiers de l'informatique en entreprise. Il s'adresse à ceux qui souhaitent intégrer rapidement le marché du travail ou poursuivre leurs études dans le domaine de l'informatique.
+            </p>
+            <p class="about__content-details-para">
+              Ce BTS forme des professionnels capables de répondre aux besoins informatiques des organisations, qu’il s’agisse de développement d'applications, de gestion de bases de données, d'administration de réseaux ou encore de cybersécurité. 
+              Le BTS SIO se divise en deux spécialisations, que les étudiants choisissent en deuxième année : <strong>SLAM</strong> et <strong>SISR</strong>.
+            </p>
+        </div>
+    
+        <div class="about__content" style="margin-top: 6rem">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Option SLAM</h3>
+            <p class="about__content-details-para">
+              L’option <strong>SLAM (Solutions Logicielles et Applications Métiers)</strong> est orientée vers le développement. Elle forme les étudiants à créer des applications (web, mobile, desktop), à gérer des bases de données, à maintenir des logiciels existants et à répondre aux besoins spécifiques des utilisateurs.
+            </p>
+            <p class="about__content-details-para">
+              <strong>Débouchés possibles :</strong> développeur web, développeur mobile, développeur d’applications, analyste-programmeur, intégrateur d’applications, technicien support applicatif, etc.
+            </p>
+          </div>
+    
+          <div class="about__content-main">
+            <h3 class="about__content-title">Option SISR</h3>
+            <p class="about__content-details-para">
+              L’option <strong>SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</strong> est axée sur l’administration des réseaux et systèmes. Elle prépare les étudiants à installer, configurer et maintenir les infrastructures informatiques d’une organisation, tout en garantissant leur sécurité.
+            </p>
+            <p class="about__content-details-para">
+              <strong>Débouchés possibles :</strong> administrateur systèmes et réseaux, technicien de maintenance, technicien sécurité, support informatique, consultant en cybersécurité, etc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section id="parcours" class="timeline-section">
       <h2 class="heading heading-sec heading-sec__mb-med">
         <span class="heading-sec__main">Parcours Professionnel</span>
@@ -299,9 +344,9 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
+                src="./images/CGB.png"
                 alt="Software Screenshot"
-                class="projects__row-img"
+                width="70%"
                 loading="lazy"
               />
             </div>
@@ -311,7 +356,7 @@
                 Application backend en Java (Spring Boot) permettant la gestion sécurisée de virements bancaires unitaires et par lots pour les entreprises.
               </p>
               <a
-                href="./cgb.html"
+                href="./pages/cgb.html"
                 class="btn btn--med btn--theme dynamicBgClr"      
                 >En savoir plus</a
               >
@@ -320,9 +365,9 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
+                src="./images/gsblogo.png"
                 alt="Software Screenshot"
-                class="projects__row-img"
+                width="70%"
                 loading="lazy"
               />
             </div>
@@ -332,7 +377,7 @@
                 Application Web en PHP en architecture MVC de gestion et traitement de fiche de frais
               </p>
               <a
-                href="./gsb.html"
+                href="./pages/gsb.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 >En savoir plus</a
               >
@@ -341,19 +386,40 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
+                src="./images/favicon.png"
                 alt="Software Screenshot"
-                class="projects__row-img"
+                width="70%"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Portfolio Personnel</h3>
+              <p class="projects__row-content-desc">
+                Developpement d'un Portfolio personnel, en HTML, CSS et JavaScript.
+              </p>
+              <a
+                href="./pages/portfolio_personnel.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >En savoir plus</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./images/apilou.png"
+                alt="Software Screenshot"
+                width="70%"
                 loading="lazy"
               />
             </div>
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Portfolio d'Amelia Pilou</h3>
               <p class="projects__row-content-desc">
-                Mise en placec d'un Portfolio de personnage fictif, ayant pour but la découverte du framework css Bootstrap
+                Mise en place d'un Portfolio de personnage fictif, ayant pour but la découverte du framework css Bootstrap
               </p>
               <a
-                href="./portfolio_amelia_pilou.html"
+                href="./pages/portfolio_amelia_pilou.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 >En savoir plus</a
               >
@@ -362,7 +428,7 @@
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
+                src="./images/nolark.png"
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
@@ -374,7 +440,7 @@
                 Site web static de vente de casques de moto, ayant pour but l'apprentissage des langages HTML, CSS et JavaScript
               </p>
               <a
-                href="./nolark.html"
+                href="./pages/nolark.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 >En savoir plus</a
               >
@@ -385,6 +451,82 @@
         </div>
       </div>
     </section>
+    <section id="projets-pro" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projet Professionnel</span>
+        </h2>
+        <div class="projects__content">
+          <!-- Projet Flutter -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./images/cashmag_logo.jpg"
+                alt="Application Flutter"
+                width="60%"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Application Flutter</h3>
+              <p class="projects__row-content-desc">
+                Développement d’une application Android Flutter pour la gestion d’inventaire, commandes et bons de livraison. Utilisée sur tablette dans un environnement professionnel.
+              </p>
+              <a
+                href="./pages/flutter.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+              >En savoir plus</a>
+            </div>
+          </div>
+          <!-- Projet Études et Solutions -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./images/etudeetsolutions.png"
+                alt="Études et Solutions"
+                width="80%"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Études et Solutions</h3>
+              <p class="projects__row-content-desc">
+                Personnalisation d’une distribution Linux et intégration d’un script Django. Projet mené dans le cadre d’un stage en entreprise.
+              </p>
+              <a
+                href="./pages/etudesEtSolutions.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+              >En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certifications" class="sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Certifications</span>
+        </h2>
+        <p class="project-details__desc-para">
+          Afin de compléter ma formation en BTS SIO option SLAM, j’ai suivi plusieurs certifications en ligne visant à renforcer mes compétences en cybersécurité, réglementation, et culture numérique.
+          Ces attestations viennent appuyer mes connaissances techniques et juridiques, indispensables pour évoluer dans le secteur informatique.
+        </p>
+        <div class="certifications-grid">
+          <div class="certification-item">
+            <img src="./images/openclassroom.png" alt="Certification openclassroom" onclick="openPdfModal('./images/certifOpenC.png')" />
+          </div>
+          <div class="certification-item">
+            <img src="./images/pix.png" alt="Certification PIX" onclick="openPdfModal('./images/certification-pix-20250114.pdf')" />
+          </div>
+          <div class="certification-item">
+            <img src="./images/rgpdpng.png" alt="Certification RGPD" onclick="openPdfModal('./images/attestationAtelier.pdf')" />
+          </div>
+          <div class="certification-item">
+            <img src="./images/secnumacademie.png" alt="Certification SecNum" onclick="openPdfModal('./images/attestationSecNum.pdf')" />
+          </div>
+        </div>
+      </div>
+      </section>
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -453,6 +595,13 @@
       &copy; 2025 Bréwen CHÉNEAU. Tous droits réservés.
     </div>
   </div>
+
+<!-- Modale PDF -->
+<div id="pdfModal" class="popup" onclick="closePdfModal()">
+  <span class="popup-close" onclick="closePdfModal()">&times;</span>
+  <iframe id="pdfViewer" frameborder="0"></iframe>
+</div>
+
 </footer>
     <script src="./index.js"></script>
   </body>

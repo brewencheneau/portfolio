@@ -799,4 +799,64 @@ textarea {
         left: 0;
       }
     }
+    .carousel {
+      text-align: center;
+    }
     
+    .carousel img {
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    .certifications-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 5rem;
+    }
+    
+    .certification-item img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .certification-item img:hover {
+      transform: scale(1.05);
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999; /* très élevé pour apparaître au-dessus de tout */
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .popup iframe {
+      width: 90vw;
+      height: 80vh;
+      border-radius: 10px;
+      background: white;
+    }
+    
+    .popup-close {
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      z-index: 10000;
+    }
+    #CGB{
+      width: 10px;       /* ou max-width: 100% pour responsive */
+      height: auto;       /* conserve les proportions */
+      display: block;
+      margin: 0 auto;     /* pour centrer */
+    }
