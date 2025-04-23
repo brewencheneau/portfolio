@@ -854,9 +854,4 @@ textarea {
       cursor: pointer;
       z-index: 10000;
     }
-    #CGB{
-      width: 10px;       /* ou max-width: 100% pour responsive */
-      height: auto;       /* conserve les proportions */
-      display: block;
-      margin: 0 auto;     /* pour centrer */
-    }
+    
