@@ -47,3 +47,31 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
       alert('Erreur : ' + JSON.stringify(error));
     });
 });
+
+function openPopup(imgSrc) {
+  const popup = document.getElementById("certifPopup");
+  const popupImg = document.getElementById("popupImg");
+  popupImg.src = imgSrc;
+  popup.style.display = "flex";
+}
+
+function closePopup(event) {
+  const popup = document.getElementById("certifPopup");
+  if (event.target.id === "certifPopup" || event.target.classList.contains("popup-close")) {
+    popup.style.display = "none";
+    document.getElementById("popupImg").src = "";
+  }
+}
+function openPdfModal(pdfUrl) {
+  const modal = document.getElementById("pdfModal");
+  const viewer = document.getElementById("pdfViewer");
+  viewer.src = pdfUrl;
+  modal.style.display = "flex";
+}
+
+function closePdfModal() {
+  const modal = document.getElementById("pdfModal");
+  const viewer = document.getElementById("pdfViewer");
+  modal.style.display = "none";
+  viewer.src = ""; // vider le src pour libérer le PDF
+}
